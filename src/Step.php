@@ -23,7 +23,7 @@ class Step extends Panel
     public function __construct($name, $fields = [])
     {  
         $request = app(NovaRequest::class); 
-
+        
         if($request->isCreateOrAttachRequest() || (
             $request->isUpdateOrUpdateAttachedRequest() && 
             ! is_subclass_of($request->resource(), Contracts\IgnoreUpdateWizard::class)
