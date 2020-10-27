@@ -14,7 +14,7 @@ Nova.booting((Vue, router, store) => {
       to.params.step = resource.step 
       to.params.navigable = resource.navigable 
 
-      console.log('welcome to zareismail create wizard (:') 
+      console.log('welcome to Jbworld create wizard (:') 
     }
     else if(resource != undefined && to.name == 'edit' && resource.update) { 
       to.matched[0].components.default = require('./components/Update.vue') 
@@ -22,7 +22,7 @@ Nova.booting((Vue, router, store) => {
       to.params.step = resource.step 
       to.params.navigable = resource.navigable 
 
-      console.log('welcome to zareismail update wizard (:') 
+      console.log('welcome to Jbworld update wizard (:') 
     }   
 
     next()  

@@ -121,19 +121,25 @@ export default {
       this.loading = false
     },
 
-    handleCancelled() {
+    handleCancelled(formData) {
       if (this.mode == 'form') {
-        //return this.$router.back()
-        return Nova.request().post(
-        `/nova-api/${this.resourceName}/step/cancelSession`,
+        if(!this.resourceId)
+        {
+          return this.$router.back()
+        }
+
+        Nova.request().post(
+        `/nova-api/${this.resourceName}/step/${this.step}/cancelled`,
         formData,
         {
           params: {
-            viaSession: session,
             resourceId: this.resourceId,
+            resource: this.resource,
+            resourceName: this.resourceName,
           },
-        }
-      )
+        });
+
+        return this.$router.back();
       }
 
       return this.$emit('cancelled-create')

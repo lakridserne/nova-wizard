@@ -1,5 +1,5 @@
 {
-    "name": "zareismail/nova-wizard",
+    "name": "jbworldllc/nova-wizard",
     "description": "A Laravel Nova tool.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Zareismail\\NovaWizard\\": "src/"
+            "Jbworld\\NovaWizard\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Zareismail\\NovaWizard\\ToolServiceProvider"
+                "Jbworld\\NovaWizard\\ToolServiceProvider"
             ]
         }
     },

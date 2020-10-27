@@ -1,6 +1,6 @@
 <?php
 
-namespace Zareismail\NovaWizard;
+namespace Jbworld\NovaWizard;
 
 use Illuminate\Support\ServiceProvider; 
 use Illuminate\Support\Facades\Route;
@@ -45,7 +45,7 @@ class ToolServiceProvider extends ServiceProvider
             ]
         ]); 
 
-        Nova::script('zareisamil-wizard', __DIR__.'/../dist/js/tool.js');
+        Nova::script('jbworld-wizard', __DIR__.'/../dist/js/tool.js');
     }
 
     /**

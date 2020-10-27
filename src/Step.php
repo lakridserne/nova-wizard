@@ -1,6 +1,6 @@
 <?php 
 
-namespace Zareismail\NovaWizard;
+namespace Jbworld\NovaWizard;
 
 
 use Laravel\Nova\Panel;

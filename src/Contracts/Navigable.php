@@ -1,6 +1,6 @@
 <?php
 
-namespace Zareismail\NovaWizard\Contracts;
+namespace Jbworld\NovaWizard\Contracts;
  
 
 interface Navigable

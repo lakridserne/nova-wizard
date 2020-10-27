@@ -1,9 +1,9 @@
 <?php
 
-namespace Zareismail\NovaWizard\Http\Controllers;
+namespace Jbworld\NovaWizard\Http\Controllers;
 
 use Illuminate\Routing\Controller; 
-use Zareismail\NovaWizard\Http\Requests\CreateResourceRequest;
+use Jbworld\NovaWizard\Http\Requests\CreateResourceRequest;
 
 class CreationFieldController extends Controller
 {

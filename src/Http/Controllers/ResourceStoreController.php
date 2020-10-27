@@ -1,10 +1,10 @@
 <?php
 
-namespace Zareismail\NovaWizard\Http\Controllers;
+namespace Jbworld\NovaWizard\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
-use Zareismail\NovaWizard\Http\Requests\CreateResourceRequest;
+use Jbworld\NovaWizard\Http\Requests\CreateResourceRequest;
 use Laravel\Nova\Nova;
 
 class ResourceStoreController extends Controller
@@ -84,9 +84,8 @@ class ResourceStoreController extends Controller
 
     public function cancelSession(CreateResourceRequest $request, $model) {
         $resource = $request->resource();
-
-        $request->session()->remove($request->resource()::uriKey());
-
+        $model = $request->findModelOrNew();
+        $model->delete();
         return response()->json([ 'status' => 'OK' ]);
     }
 }

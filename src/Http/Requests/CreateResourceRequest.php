@@ -1,6 +1,6 @@
 <?php
 
-namespace Zareismail\NovaWizard\Http\Requests;
+namespace Jbworld\NovaWizard\Http\Requests;
 
 use Laravel\Nova\Http\Requests\CreateResourceRequest as NovaRequest;
 
