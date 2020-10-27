@@ -81,4 +81,12 @@ class ResourceStoreController extends Controller
 
         return response()->json([ 'status' => 'OK' ]);
     }
+
+    public function cancelSession(CreateResourceRequest $request, $model) {
+        $resource = $request->resource();
+
+        $request->session()->remove($request->resource()::uriKey());
+
+        return response()->json([ 'status' => 'OK' ]);
+    }
 }

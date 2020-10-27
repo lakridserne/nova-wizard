@@ -123,7 +123,17 @@ export default {
 
     handleCancelled() {
       if (this.mode == 'form') {
-        return this.$router.back()
+        //return this.$router.back()
+        return Nova.request().post(
+        `/nova-api/${this.resourceName}/step/cancelSession`,
+        formData,
+        {
+          params: {
+            viaSession: session,
+            resourceId: this.resourceId,
+          },
+        }
+      )
       }
 
       return this.$emit('cancelled-create')

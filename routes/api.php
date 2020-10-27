@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/{resource}/step/{step}', 'ResourceStoreController@handle');
 Route::post('/{resource}/step/{step}/clear', 'ResourceStoreController@clearSession');
+Route::post('/{resource}/step/{step}/cancelled', 'ResourceStoreController@cancelSession');
 Route::get('/{resource}/step/{step}/creation-fields', 'CreationFieldController@index');
 Route::get('/{resource}/step/{step}/update-fields', 'UpdateFieldController@index');
