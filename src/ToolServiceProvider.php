@@ -1,6 +1,6 @@
 <?php
 
-namespace Jbworld\NovaWizard;
+namespace lakridserne\NovaWizard;
 
 use Illuminate\Support\ServiceProvider; 
 use Illuminate\Support\Facades\Route;
@@ -45,7 +45,7 @@ class ToolServiceProvider extends ServiceProvider
             ]
         ]); 
 
-        Nova::script('jbworld-wizard', __DIR__.'/../dist/js/tool.js');
+        Nova::script('lakridserne-wizard', __DIR__.'/../dist/js/tool.js');
     }
 
     /**

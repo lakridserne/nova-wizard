@@ -1,6 +1,6 @@
 <?php
 
-namespace Jbworld\NovaWizard\Http\Controllers; 
+namespace lakridserne\NovaWizard\Http\Controllers; 
 
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;

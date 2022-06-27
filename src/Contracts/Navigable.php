@@ -1,6 +1,6 @@
 <?php
 
-namespace Jbworld\NovaWizard\Contracts;
+namespace lakridserne\NovaWizard\Contracts;
  
 
 interface Navigable

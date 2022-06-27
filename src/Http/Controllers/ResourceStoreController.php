@@ -1,10 +1,10 @@
 <?php
 
-namespace Jbworld\NovaWizard\Http\Controllers;
+namespace lakridserne\NovaWizard\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
-use Jbworld\NovaWizard\Http\Requests\CreateResourceRequest;
+use lakridserne\NovaWizard\Http\Requests\CreateResourceRequest;
 use Laravel\Nova\Nova;
 
 class ResourceStoreController extends Controller
